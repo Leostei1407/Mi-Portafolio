@@ -145,10 +145,14 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 8rem 3rem 5rem;
     position: relative;
     overflow: hidden;
+    text-align: center;
   }
+  .hero-btns { justify-content: center; }
+  .hero-phrase { text-align: center; }
   .hero-bg-text {
     position: absolute;
     right: -2rem; top: 50%;
@@ -588,7 +592,9 @@
   @media (max-width: 768px) {
     nav { padding: 1.2rem 1.5rem; }
     nav.scrolled { padding: 1rem 1.5rem; }
-    .hero { padding: 7rem 1.5rem 4rem; }
+    .hero { padding: 7rem 1.5rem 4rem; justify-content: flex-start; text-align: left; }
+    .hero-btns { justify-content: flex-start; }
+    .hero-phrase { text-align: left; }
     section { padding: 4rem 1.5rem; }
     .projects-grid { grid-template-columns: 1fr; }
     .about-layout { grid-template-columns: 1fr; gap: 3rem; }
