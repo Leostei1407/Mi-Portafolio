@@ -408,20 +408,24 @@
 
   /* SOBRE MÍ */
   #sobre-mi { background: var(--bg); }
+  #sobre-mi .section-header {
+    max-width: 1000px;
+    margin-left: auto; margin-right: auto;
+  }
   .about-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem; align-items: start;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   .about-text p {
-    font-size: 15px; font-weight: 300;
-    line-height: 1.95; color: var(--muted);
-    margin-bottom: 1.2rem;
+    font-size: 17px; font-weight: 300;
+    line-height: 2.1; color: var(--muted);
+    margin-bottom: 1.6rem;
   }
   .about-text p strong { font-weight: 500; color: var(--ink); }
   .about-phrase {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.55rem; font-weight: 300;
+    font-size: 2rem; font-weight: 300;
     font-style: italic; color: var(--ink);
     line-height: 1.5;
     border-left: 2px solid var(--gold);
@@ -667,17 +671,18 @@
           <p>Sube tu captura aquí</p>
         </div>
         <div class="proj-overlay">
-          <a href="TU-LINK-AQUI" target="_blank">Ver proyecto →</a>
+          <a href="https://tienda-online-one-xi.vercel.app" target="_blank">Ver proyecto →</a>
         </div>
       </div>
       <div class="proj-body">
         <div class="proj-num-label">01</div>
-        <div class="proj-title">Nombre del Proyecto</div>
-        <p class="proj-desc">Describe brevemente qué resuelve este proyecto y qué aprendiste construyéndolo.</p>
+        <div class="proj-title">Tienda Online</div>
+        <p class="proj-desc">E-commerce con carrito de compras y panel de administración protegido por autenticación. Gestión de productos, pedidos y usuarios en tiempo real.</p>
         <div class="proj-tags">
-          <span class="proj-tag">React</span>
+          <span class="proj-tag">Next.js</span>
           <span class="proj-tag">Supabase</span>
           <span class="proj-tag">TypeScript</span>
+          <span class="proj-tag">IA</span>
         </div>
       </div>
     </div>
@@ -689,16 +694,18 @@
           <p>Sube tu captura aquí</p>
         </div>
         <div class="proj-overlay">
-          <a href="TU-LINK-AQUI" target="_blank">Ver proyecto →</a>
+          <a href="https://zeta-app.net" target="_blank">Ver proyecto →</a>
         </div>
       </div>
       <div class="proj-body">
         <div class="proj-num-label">02</div>
-        <div class="proj-title">Nombre del Proyecto</div>
-        <p class="proj-desc">Describe brevemente qué resuelve este proyecto y qué aprendiste construyéndolo.</p>
+        <div class="proj-title">Zeta App</div>
+        <p class="proj-desc">Herramienta integral para profesores: control de asistencias, registro de notas, planificación de clases y seguimiento académico de alumnos en un solo lugar.</p>
         <div class="proj-tags">
-          <span class="proj-tag">Next.js</span>
-          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">React</span>
+          <span class="proj-tag">Vue</span>
+          <span class="proj-tag">Supabase</span>
+          <span class="proj-tag">TypeScript</span>
           <span class="proj-tag">IA</span>
         </div>
       </div>
@@ -711,17 +718,18 @@
           <p>Sube tu captura aquí</p>
         </div>
         <div class="proj-overlay">
-          <a href="TU-LINK-AQUI" target="_blank">Ver proyecto →</a>
+          <a href="https://calendario-kumbayah.vercel.app" target="_blank">Ver proyecto →</a>
         </div>
       </div>
       <div class="proj-body">
         <div class="proj-num-label">03</div>
-        <div class="proj-title">Nombre del Proyecto</div>
-        <p class="proj-desc">Describe brevemente qué resuelve este proyecto y qué aprendiste construyéndolo.</p>
+        <div class="proj-title">Calendario Kumbayah</div>
+        <p class="proj-desc">Sistema de reservas para campamento con calendario interactivo, control de disponibilidad y gestión de inscripciones por fecha.</p>
         <div class="proj-tags">
-          <span class="proj-tag">React</span>
-          <span class="proj-tag">TypeScript</span>
           <span class="proj-tag">Next.js</span>
+          <span class="proj-tag">Supabase</span>
+          <span class="proj-tag">TypeScript</span>
+          <span class="proj-tag">IA</span>
         </div>
       </div>
     </div>
@@ -733,17 +741,17 @@
           <p>Sube tu captura aquí</p>
         </div>
         <div class="proj-overlay">
-          <a href="TU-LINK-AQUI" target="_blank">Ver proyecto →</a>
+          <a href="https://app-tarjetero.vercel.app" target="_blank">Ver proyecto →</a>
         </div>
       </div>
       <div class="proj-body">
         <div class="proj-num-label">04</div>
-        <div class="proj-title">Nombre del Proyecto</div>
-        <p class="proj-desc">Describe brevemente qué resuelve este proyecto y qué aprendiste construyéndolo.</p>
+        <div class="proj-title">App Tarjetero</div>
+        <p class="proj-desc">Tarjetero virtual inteligente con IA integrada para crear, organizar y compartir tarjetas de contacto de forma rápida y moderna.</p>
         <div class="proj-tags">
-          <span class="proj-tag">Supabase</span>
-          <span class="proj-tag">JavaScript</span>
-          <span class="proj-tag">React</span>
+          <span class="proj-tag">Next.js</span>
+          <span class="proj-tag">TypeScript</span>
+          <span class="proj-tag">IA</span>
         </div>
       </div>
     </div>
@@ -761,90 +769,17 @@
   <div class="about-layout">
     <div class="about-text reveal">
       <p>
-        Soy <strong>Leonardo Osteicochea</strong>, desarrollador Fullstack junior con alrededor de un año construyendo proyectos reales. Me enganché a la programación porque es de las pocas cosas donde tu única limitación es tu curiosidad.
+        Tengo 21 años, voy por el sexto semestre de <strong>Ingeniería en Sistemas</strong> y me dedico a construir el lado de internet que la gente realmente disfruta usar: landing pages efectivas, aplicaciones fluidas y sitios web que funcionan al primer clic.
       </p>
       <p>
-        Trabajo con <strong>React, Next.js, TypeScript, JavaScript y Supabase</strong>. Aprendo rápido, me adapto mejor y siempre entrego código limpio y funcional, con o sin IA de por medio.
+        Mi día a día se mueve entre <strong>TypeScript, Next.js, Node.js y Supabase</strong>. No pretendo saberlo todo, pero sé resolver problemas rápido y me adapto a lo que el proyecto necesita.
       </p>
       <p>
-        Soy un <strong>entusiasta de la inteligencia artificial</strong> — no como moda, sino como filosofía: creo que las mejores herramientas son las que amplifican lo que los humanos ya saben hacer.
+        Creo firmemente que la <strong>Inteligencia Artificial</strong> no vino a reemplazarnos, sino a hacernos más rápidos — la uso como copiloto para optimizar código, automatizar tareas y entregar proyectos en tiempo récord sin perder calidad.
       </p>
       <blockquote class="about-phrase">
         "Un desarrollador que usa IA bien<br>vale por <em>diez</em> que no saben usarla."
       </blockquote>
-    </div>
-    <div class="about-right reveal">
-      <div class="stats-grid">
-        <div class="stat-box">
-          <span class="stat-num">1</span>
-          <span class="stat-label">Año programando</span>
-        </div>
-        <div class="stat-box">
-          <span class="stat-num">5</span>
-          <span class="stat-label">Tecnologías</span>
-        </div>
-        <div class="stat-box">
-          <span class="stat-num">IA</span>
-          <span class="stat-label">Mi superpoder</span>
-        </div>
-        <div class="stat-box">
-          <span class="stat-num">∞</span>
-          <span class="stat-label">Ganas de crecer</span>
-        </div>
-      </div>
-
-      <div class="stack-cards">
-        <div class="stack-card">
-          <div class="stack-card-left">
-            <div class="stack-icon">Re</div>
-            <div class="stack-name-col">
-              <span class="stack-name">React</span>
-              <span class="stack-sub">Componentes, hooks, estado</span>
-            </div>
-          </div>
-          <span class="stack-level level-solid">Sólido</span>
-        </div>
-        <div class="stack-card">
-          <div class="stack-card-left">
-            <div class="stack-icon">Nx</div>
-            <div class="stack-name-col">
-              <span class="stack-name">Next.js</span>
-              <span class="stack-sub">SSR, App Router, APIs</span>
-            </div>
-          </div>
-          <span class="stack-level level-solid">Sólido</span>
-        </div>
-        <div class="stack-card">
-          <div class="stack-card-left">
-            <div class="stack-icon">TS</div>
-            <div class="stack-name-col">
-              <span class="stack-name">TypeScript</span>
-              <span class="stack-sub">Tipos, interfaces, genéricos</span>
-            </div>
-          </div>
-          <span class="stack-level level-solid">Sólido</span>
-        </div>
-        <div class="stack-card">
-          <div class="stack-card-left">
-            <div class="stack-icon">JS</div>
-            <div class="stack-name-col">
-              <span class="stack-name">JavaScript</span>
-              <span class="stack-sub">ES6+, async/await, DOM</span>
-            </div>
-          </div>
-          <span class="stack-level level-solid">Sólido</span>
-        </div>
-        <div class="stack-card">
-          <div class="stack-card-left">
-            <div class="stack-icon">Sb</div>
-            <div class="stack-name-col">
-              <span class="stack-name">Supabase</span>
-              <span class="stack-sub">Auth, base de datos, realtime</span>
-            </div>
-          </div>
-          <span class="stack-level level-learning">Aprendiendo</span>
-        </div>
-      </div>
     </div>
   </div>
 </section>
