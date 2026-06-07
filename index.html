@@ -516,31 +516,37 @@
     background: var(--white);
     border: 0.5px solid var(--border);
     border-radius: 4px;
-    padding: 1.8rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default;
+    cursor: pointer;
   }
+  .cert-img {
+    width: 100%; aspect-ratio: 16/9;
+    object-fit: cover; object-position: top;
+    display: block;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .cert-body { padding: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem; }
   .cert-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 40px rgba(0,0,0,0.07);
   }
   .cert-num {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem; font-weight: 300;
+    font-size: 1.4rem; font-weight: 300;
     color: rgba(180,148,90,0.25);
     line-height: 1;
   }
   .cert-name {
-    font-size: 14px; font-weight: 500;
+    font-size: 13px; font-weight: 500;
     color: var(--ink); line-height: 1.4;
   }
   .cert-meta {
     display: flex; align-items: center;
     justify-content: space-between;
-    margin-top: auto; padding-top: 1rem;
+    margin-top: 0.4rem; padding-top: 0.8rem;
     border-top: 0.5px solid var(--border);
   }
   .cert-platform {
@@ -875,20 +881,26 @@
   <div class="cert-grid">
 
     <div class="cert-card reveal" data-img="Certificado-Javascript-desde-cero-EducaciónIT.png">
-      <div class="cert-num">01</div>
-      <div class="cert-name">JavaScript Desde Cero</div>
-      <div class="cert-meta">
-        <span class="cert-platform">EducaciónIT</span>
-        <span class="cert-year">2024</span>
+      <img class="cert-img" src="Certificado-Javascript-desde-cero-EducaciónIT.png" alt="JavaScript Desde Cero">
+      <div class="cert-body">
+        <div class="cert-num">01</div>
+        <div class="cert-name">JavaScript Desde Cero</div>
+        <div class="cert-meta">
+          <span class="cert-platform">EducaciónIT</span>
+          <span class="cert-year">2024</span>
+        </div>
       </div>
     </div>
 
     <div class="cert-card reveal" data-img="Certificado-Desarrollo-Web-con-HTML-EducaciónIT.png">
-      <div class="cert-num">02</div>
-      <div class="cert-name">Desarrollo Web con HTML</div>
-      <div class="cert-meta">
-        <span class="cert-platform">EducaciónIT</span>
-        <span class="cert-year">2024</span>
+      <img class="cert-img" src="Certificado-Desarrollo-Web-con-HTML-EducaciónIT.png" alt="Desarrollo Web con HTML">
+      <div class="cert-body">
+        <div class="cert-num">02</div>
+        <div class="cert-name">Desarrollo Web con HTML</div>
+        <div class="cert-meta">
+          <span class="cert-platform">EducaciónIT</span>
+          <span class="cert-year">2024</span>
+        </div>
       </div>
     </div>
 
